@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1  class="text-center" id="title">Pet Sitter Survey Form</h1> 
+    </header>
+      <p class="description text-center" id="description" >
+        Thanks for helping to promote my work!
+      </p>
+
+    <form id="survey-form">
+     <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label> 
+      </label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>What pets do you have at home?</p>
+      <select  name="role" class="form-control" id="dropdown" required>
+        <option disabled selected value>Select current role</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="dogs-cats">Dogs and Cats</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend my services to anyone?</p>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely
+      </label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe
+      </label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure
+      </label>
+    </div>
+  
+    <div class="form-group">
+      <p>
+        Why do you find interesting to hire a pet sitter?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label>
+        <input
+          name="prefer"
+          value="pet-welfare"
+          type="checkbox"
+          class="input-checkbox"
+        />Pet Welfare
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="pet-daily-routine"
+          type="checkbox"
+          class="input-checkbox"
+        />Keeping your pet's daily routine
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="personalizes-individual-service"
+          type="checkbox"
+          class="input-checkbox"
+        />Personalized and individual service
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="practicality"
+          type="checkbox"
+          class="input-checkbox"
+        />Practicality
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="comfort"
+          type="checkbox"
+          class="input-checkbox"
+        />Comfort
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="safety"
+          type="checkbox"
+          class="input-checkbox"
+        />Safety
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="daily-cleaning"
+          type="checkbox"
+          class="input-checkbox"
+        />Daily cleaning of the animal's needs
+      </label>
+
+      <label>
+        <input
+          name="prefer"
+          value="exposure"
+          type="checkbox"
+          class="input-checkbox"
+        />Animal's exposure to the disease is minimized
+      </label>
+
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          class="input-textarea"
+          id="comments"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+    </div>
+  
+    <div class="form-group">
+      <button type="submit" class="submit-button" id="submit">
+        Submit
+      </button>
+    </div>
+
+  <footer class="section">   
+    <div class="brand">
+      <p>©2021 AmandaAnay</p>
+      <p>All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  </form>
+  </div>
+</body>  
